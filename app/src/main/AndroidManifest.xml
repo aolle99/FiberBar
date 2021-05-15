@@ -21,6 +21,11 @@
             android:name=".menuViewActivity"
             android:label="menuViewActivity" >
         </activity>
+        <activity
+            android:name=".PurchaseSummaryActivity"
+            android:parentActivityName=".menuViewActivity">
+            android:label="PurchaseSummaryActivity" >
+        </activity>
     </application>
 
 </manifest>

@@ -14,6 +14,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
+import cat.fiberfarra.fiberbar.ui.login.LoginActivity;
 import cat.fiberfarra.fiberbar.ui.main.SectionsPagerAdapter;
 import cat.fiberfarra.fiberbar.databinding.ActivityMenuViewBinding;
 
@@ -24,6 +25,7 @@ public class menuViewActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getSupportActionBar().hide();
 
         binding = ActivityMenuViewBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
@@ -38,9 +40,12 @@ public class menuViewActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Intent i = new Intent(menuViewActivity.this, PurchaseSummaryActivity.class);
+                startActivity(i);
                 Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
             }
         });
+
     }
 }
