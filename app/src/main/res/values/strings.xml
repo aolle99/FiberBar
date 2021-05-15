@@ -22,6 +22,8 @@
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
     <string name="title_activity_menu_view">menuViewActivity</string>
-    <string name="tab_text_1">Tab 1</string>
-    <string name="tab_text_2">Tab 2</string>
+    <string name="tab_text_1">Menu</string>
+    <string name="tab_text_2">Tapes</string>
+    <string name="tab_text_3">Entrepans</string>
+    <string name="tab_text_4">Begudes</string>
 </resources>
