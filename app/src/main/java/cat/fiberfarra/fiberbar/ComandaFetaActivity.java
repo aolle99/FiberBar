@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.Random;
 
 public class ComandaFetaActivity extends AppCompatActivity {
-
+    int num = 0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -45,5 +45,9 @@ public class ComandaFetaActivity extends AppCompatActivity {
         String message = LlistaFrasesCelebres.get(rand_int1);
         TextView mytextView = (TextView)findViewById(R.id.frase);
         mytextView.setText(message);
+
+        String message2 = "número de comanda: "+ num;
+        TextView mytextView2 = (TextView)findViewById(R.id.num_comanda);
+        mytextView2.setText(message2);
     }
 }
