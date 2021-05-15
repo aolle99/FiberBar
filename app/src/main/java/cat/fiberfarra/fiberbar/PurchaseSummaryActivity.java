@@ -117,7 +117,7 @@ public class PurchaseSummaryActivity extends AppCompatActivity {
                         }
                     }
                 }
-                if(preuTotal<=0) {
+                if(preuTotal<=1) {
                     Intent i = new Intent(PurchaseSummaryActivity.this, ComandaFetaActivity.class);
                     startActivity(i);
                 }
