@@ -28,4 +28,10 @@
     <string name="tab_text_4">Begudes</string>
     <string name="preparing">La seva comanda està sent preparada</string>
     <string name="comanda_realitzada">Comanda Realitzada!</string>
+    <string name="navigation_historial">El meu historial</string>
+    <string name="navigation_assoliments">Els meus assoliments</string>
+    <string name="navigation_alergens">Les meves al·lèrgies</string>
+    <string name="navigation_example">Marcos Montero</string>
+    <string name="navigation_email">marcos.montero@estudiantat.upc.edu</string>
+    <string name="navigation_profile">El meu perfil</string>
 </resources>
