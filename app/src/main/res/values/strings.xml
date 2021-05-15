@@ -23,9 +23,9 @@
     <string name="login_failed">"Login failed"</string>
     <string name="title_activity_menu_view">menuViewActivity</string>
     <string name="tab_text_1">Menu</string>
-    <string name="tab_text_2">Tapes</string>
-    <string name="tab_text_3">Entrepans</string>
-    <string name="tab_text_4">Begudes</string>
+    <string name="tab_text_2">Tapa</string>
+    <string name="tab_text_3">Entrepà</string>
+    <string name="tab_text_4">Beguda</string>
     <string name="preparing">La seva comanda està sent preparada</string>
     <string name="comanda_realitzada">Comanda Realitzada!</string>
     <string name="navigation_historial">El meu historial</string>

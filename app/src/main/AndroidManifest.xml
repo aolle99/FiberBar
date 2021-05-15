@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FiberBar">
 
-        <activity android:name=".NavigationActivity">
+        <activity android:name=".menuViewActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
