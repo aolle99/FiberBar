@@ -123,9 +123,5 @@ public class PurchaseSummaryActivity extends AppCompatActivity {
                 }
             }
         });
-
     }
-
-
-
 }

@@ -17,18 +17,21 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-       <activity
+        <activity
             android:name=".menuViewActivity"
             android:label="menuViewActivity" >
         </activity>
         <activity
             android:name=".PurchaseSummaryActivity"
             android:parentActivityName=".menuViewActivity">
-            android:label="PurchaseSummaryActivity" >
         </activity>
         <activity
             android:name=".ComandaFetaActivity"
-            android:parentActivityName=".ComandaFetaActivity">
+            android:parentActivityName=".menuViewActivity">
+        </activity>
+        <activity
+            android:name=".NavigationActivity"
+            android:label="NavigationActivity" >
         </activity>
     </application>
 

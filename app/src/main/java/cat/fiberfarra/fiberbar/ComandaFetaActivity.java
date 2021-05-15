@@ -2,14 +2,16 @@ package cat.fiberfarra.fiberbar;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.Random;
 
 public class ComandaFetaActivity extends AppCompatActivity {
-    int num = 0;
+    int num = 1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -49,5 +51,10 @@ public class ComandaFetaActivity extends AppCompatActivity {
         String message2 = "número de comanda: "+ num;
         TextView mytextView2 = (TextView)findViewById(R.id.num_comanda);
         mytextView2.setText(message2);
+
+    }
+    public void sendMessage(View view){
+        Intent i = new Intent(ComandaFetaActivity.this, NavigationActivity.class);
+        startActivity(i);
     }
 }
