@@ -3,6 +3,8 @@ package  cat.fiberfarra.fiberbar.ui.login;
 import android.app.Activity;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
+
+import android.content.Intent;
 import android.os.Bundle;
 import androidx.annotation.Nullable;
 import androidx.annotation.StringRes;
@@ -18,7 +20,10 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import cat.fiberfarra.fiberbar.ComandaFetaActivity;
+import cat.fiberfarra.fiberbar.MainActivity;
 import cat.fiberfarra.fiberbar.R;
+import cat.fiberfarra.fiberbar.menuViewActivity;
 import cat.fiberfarra.fiberbar.ui.login.LoginViewModel;
 import cat.fiberfarra.fiberbar.ui.login.LoginViewModelFactory;
 import cat.fiberfarra.fiberbar.databinding.ActivityLoginBinding;
@@ -26,8 +31,13 @@ import cat.fiberfarra.fiberbar.databinding.ActivityLoginBinding;
 public class LoginActivity extends AppCompatActivity {
 
     private LoginViewModel loginViewModel;
-private ActivityLoginBinding binding;
+    private ActivityLoginBinding binding;
 
+    public void sendMessage() {
+        //Intent intent = new Intent(this, menuViewActivity.class);
+        //startActivity(intent);
+
+    }
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -76,7 +86,10 @@ private ActivityLoginBinding binding;
 
                 //Complete and destroy login activity once successful
                 finish();
+                //sendMessage();
+
             }
+
         });
 
         TextWatcher afterTextChangedListener = new TextWatcher() {
@@ -120,10 +133,16 @@ private ActivityLoginBinding binding;
         });
     }
 
+
+
     private void updateUiWithUser(LoggedInUserView model) {
         String welcome = getString(R.string.welcome) + model.getDisplayName();
         // TODO : initiate successful logged in experience
         Toast.makeText(getApplicationContext(), welcome, Toast.LENGTH_LONG).show();
+
+        Intent i = new Intent(LoginActivity.this, menuViewActivity.class);
+        startActivity(i);
+        //finish();
     }
 
     private void showLoginFailed(@StringRes Integer errorString) {
