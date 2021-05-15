@@ -1,5 +1,9 @@
 package cat.fiberfarra.fiberbar.data;
 
+import android.widget.EditText;
+import android.widget.TextView;
+
+import cat.fiberfarra.fiberbar.R;
 import cat.fiberfarra.fiberbar.data.model.LoggedInUser;
 
 import java.io.IOException;
@@ -13,6 +17,10 @@ public class LoginDataSource {
 
         try {
             // TODO: handle loggedInUser authentication
+            /**
+            EditText editText = findViewById(R.id.username);
+            String value = editText.getText().toString();*/
+
             LoggedInUser fakeUser =
                     new LoggedInUser(
                             java.util.UUID.randomUUID().toString(),

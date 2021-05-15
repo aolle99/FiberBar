@@ -26,6 +26,10 @@
             android:parentActivityName=".menuViewActivity">
             android:label="PurchaseSummaryActivity" >
         </activity>
+        <activity
+            android:name=".ComandaFetaActivity"
+            android:parentActivityName=".ComandaFetaActivity">
+        </activity>
     </application>
 
 </manifest>
