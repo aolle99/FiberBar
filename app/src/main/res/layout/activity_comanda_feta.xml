@@ -6,4 +6,32 @@
     android:layout_height="match_parent"
     tools:context=".ComandaFetaActivity">
 
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="211dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="128dp"
+        android:text="@string/preparing"
+        android:textAlignment="center"
+        android:textColor="@color/red"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="413dp"
+        android:layout_height="47dp"
+        android:background="@color/grey"
+        android:gravity="center"
+        android:text="@string/comanda_realitzada"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

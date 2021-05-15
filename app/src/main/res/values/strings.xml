@@ -26,4 +26,6 @@
     <string name="tab_text_2">Tapes</string>
     <string name="tab_text_3">Entrepans</string>
     <string name="tab_text_4">Begudes</string>
+    <string name="preparing">La seva comanda està sent preparada</string>
+    <string name="comanda_realitzada">Comanda Realitzada!</string>
 </resources>
